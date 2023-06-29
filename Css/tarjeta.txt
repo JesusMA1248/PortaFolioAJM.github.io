@@ -1,0 +1,325 @@
+.tarjetas {
+  padding-top: 1px;
+}
+.container .title {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.container .title::after {
+  content: "Proyect´s";
+  padding-bottom: 0px;
+}
+
+.container {
+  margin-top: 169px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fotoskill {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.container .card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -169px;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+/*     cambio el tamaño del recuadro negro de las tarjetas*/
+.container .card .face {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+/* ----------------- CORREGIDO HACIA ARRIBA!---------------- */
+/*   cambio el tamaño de las tarjetas en las que se mueven   */
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(200px);
+}
+
+.container .card:hover .face.face1 {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+
+.container .card .face.face1 .content h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+.container .card .face.face1 .content a {
+  transition: 0.5s;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p,
+a {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* .container .card .face.face2 .content a {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  outline: 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+} */
+
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: whitesmoke;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+parte antigua de las tarjetas las dejo aca esto es HTML
+
+<div class="container">
+  <h2 class="title">Portafolio</h2>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Desktop.jpg" alt="ima1" />
+        <!-- <i class="fab fa-windows"></i> -->
+        <!-- <h3>Windows</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Soy un técnico altamente capacitado y apasionado por el armado de setups de escritorio personalizados. 
+          Con una sólida formación en informática y una amplia experiencia en el campo con más de 15 años, 
+          puedo ofrecerte soluciones especializadas para potenciar tu experiencia informática.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Hardware.jpg" alt="ima2" />
+        <!-- <i class="fab fa-android"></i> -->
+        <!-- <h3>Android</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Poseo un amplio conocimiento en hardware, software y componentes clave del sistema. 
+          Estoy al día con las últimas tecnologías y tendencias de la industria, 
+          lo que me permite seleccionar cuidadosamente los componentes más adecuados para 
+          cada setup, asegurando un rendimiento óptimo y una experiencia fluida.
+          me destaco por mi enfoque meticuloso en cada etapa del proceso de armado. 
+          Cuido cada detalle, desde la elección de los componentes de alta calidad 
+          hasta el ensamblaje y la gestión de cables, garantizando una estética impecable 
+          y un funcionamiento eficiente.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Seguridad.jpg" alt="ima3" />
+        <!-- <i class="fab fa-android"></i> -->
+        <!-- <h3>Android</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Mi conocimiento en tecnologías y herramientas de seguridad es amplio y actualizado.
+          Estoy familiarizado con los estándares de seguridad de la industria y las mejores 
+          prácticas en protección de datos. Ya sea que necesites una arquitectura de red segura, 
+          un sistema de detección de intrusiones o una auditoría de seguridad exhaustiva, 
+          puedo ofrecerte soluciones adaptadas según las necesidades.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Hackingetico.jpg" alt="ima4" />
+        <!-- <i class="fab fa-android"></i> -->
+        <!-- <h3>Android</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Mi conocimiento en diversas metodologías y herramientas de hacking ético es amplio y actualizado. 
+          Estoy al tanto de las últimas técnicas utilizadas por los hackers y puedo aplicar 
+          ese conocimiento en beneficio de las organizaciones. 
+          Utilizo estas técnicas de manera responsable y ética, asegurándome de obtener la información 
+          necesaria sin causar daño o interrupción en tus sistemas.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Datanalityc.jpg" alt="ima5" />
+        <!-- <i class="fab fa-android"></i> -->
+        <!-- /*revisar si lo dejo o lo saco*/ -->
+        <!-- <h3>Android</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          La interpretación y presentación de resultados son fundamentales en mi trabajo. 
+          No solo analizo los datos, sino que también puedo proporcionar informes y 
+          presentaciones detalladas que resumen los insights más relevantes y brindan 
+          recomendaciones estratégicas. Mi objetivo es que se pueda aprovechar al máximo 
+          los datos y utilizarlos como una ventaja competitiva para las organizaciones.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <img class="fotoskill" src="Img\Tarjetas\Developer.jpg" alt="ima6" />
+        <!-- <i class="fab fa-apple"></i> -->
+        <!-- /*revisar si lo dejo o lo saco*/ -->
+        <!-- <h3>Apple</h3> -->
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>
+          Una de mis principales cualidades es mi sólida base de conocimientos en desarrollo de software.
+          Estoy familiarizado con diversos lenguajes de programación, marcos de trabajo y tecnologías 
+          relevantes en el campo. Si bien estoy en constante evolución y aprendizaje, 
+          ya poseo la capacidad de construir aplicaciones funcionales y realizar tareas de 
+          desarrollo de manera efectiva.
+        </p>
+        <a href="#" type="button">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+      <div class="max-width">
+          <h2 class="title">Contact me</h2>
+          <div class="contact-content">
+              <div class="column left">
+                  <div class="text">Get in Touch</div>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                  <div class="icons">
+                      <div class="row">
+                          <i class="fas fa-user"></i>
+                          <div class="info">
+                              <div class="head">Name</div>
+                              <div class="sub-title">Arroyo Jesus M.</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div class="info">
+                              <div class="head">Address</div>
+                              <div class="sub-title">Argentina, Buenos Aires</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <i class="fas fa-envelope"></i>
+                          <div class="info">
+                              <div class="head">Email</div>
+                              <div class="sub-title">nick@gmail.com</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="column right">
+                  <div class="text">Message me</div>
+                  <form action="#">
+                      <div class="fields">
+                          <div class="field name">
+                              <input type="text" placeholder="Name" required>
+                          </div>
+                          <div class="field email">
+                              <input type="email" placeholder="Email" required>
+                          </div>
+                      </div>
+                      <div class="field">
+                          <input type="text" placeholder="Subject" required>
+                      </div>
+                      <div class="field textarea">
+                          <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                          
+                      </div>
+                      <div class="button-area">
+                          <button type="submit">Send message</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div  class="mapa">
+            <iframe class="map" style="border: 5px solid red;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6550.317263830366!2d-58.393221688807756!3d-34.827103881321534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1683061314409!5m2!1ses!2sar" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+  </section>
